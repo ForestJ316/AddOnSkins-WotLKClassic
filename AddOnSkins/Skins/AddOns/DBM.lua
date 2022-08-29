@@ -30,7 +30,8 @@ function AS:DBM(event, addon)
 
 						AS:SkinTexture(icon1, true)
 						icon1:ClearAllPoints()
-						icon1:SetPoint('BOTTOMRIGHT', frame, 'BOTTOMLEFT', AS:AdjustForTheme(-1), 1)
+						--icon1:SetPoint('BOTTOMRIGHT', frame, 'BOTTOMLEFT', AS:AdjustForTheme(-1), 1)
+						icon1:SetPoint('BOTTOMRIGHT', frame, 'BOTTOMLEFT', -8, 1)
 						icon1:SetSize(iconSize, iconSize)
 
 						AS:SkinTexture(icon2, true)
@@ -53,8 +54,8 @@ function AS:DBM(event, addon)
 						timer:SetShadowColor(0, 0, 0, 0)
 
 						if AS:CheckOption('DBMSkinHalf') then
-							name:SetPoint('BOTTOMLEFT', frame, 'TOPLEFT', 0, 3)
-							timer:SetPoint('BOTTOMRIGHT', frame, 'TOPRIGHT', -1, 1)
+							name:SetPoint('BOTTOMLEFT', frame, 'TOPLEFT', 0, 5)
+							timer:SetPoint('BOTTOMRIGHT', frame, 'TOPRIGHT', -1, 2)
 						else
 							name:SetPoint('LEFT', frame, 'LEFT', 4, 0)
 							timer:SetPoint('RIGHT', frame, 'RIGHT', -4, 0)
